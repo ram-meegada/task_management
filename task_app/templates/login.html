@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}Login{% endblock %}
+
+{% block content %}
+<div class="container">
+    {% load socialaccount %}
+    <h1>Login</h1>
+    <p>Please log in to manage your tasks.</p>
+    <a href="{% provider_login_url 'google' %}" class="btn btn-primary">Login with Google</a>
+    {% if user.is_authenticated %}
+        <p>You are logged in as {{user.email}}</p>
+    {% endif %}
+
+</div>
+{% endblock %}

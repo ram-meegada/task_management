@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 1.5em;
+        }
+        .content {
+            padding: 20px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 20px 0;
+            color: #ffffff;
+            background-color: #4CAF50;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 1em;
+            text-align: center;
+        }
+        .footer {
+            background-color: #f1f1f1;
+            padding: 10px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            You're Invited to Join Our Task Management Platform
+        </div>
+        <div class="content">
+            <p>Hi,</p>
+            <p>You have been invited to join our platform. Click the link below to complete your registration and set up your account:</p>
+            <p style="text-align: center;">
+                <a href="{{token_link}}" class="button">Register Now</a>
+            </p>
+            <p>If the button above doesn't work, copy and paste the following link into your browser:</p>
+            <p><a href="{{token_link}}">{{token_link}}</a></p>
+            <p>If you have any questions, feel free to contact us.</p>
+            <p>Best regards,<br>Your Team</p>
+        </div>
+        <div class="footer">
+            &copy; 2024 Task Manager. All rights reserved.
+        </div>
+    </div>
+</body>
+</html>
